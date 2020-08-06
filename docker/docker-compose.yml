@@ -1,0 +1,76 @@
+version: "3.7"
+services:
+  apache:
+    build: ./apache
+    container_name: ${COMPOSE_PROJECT_NAME}_apache
+    image: ${COMPOSE_PROJECT_NAME}/apache
+    depends_on:
+      - mariadb
+    networks:
+      - frontend
+      - backend
+    ports:
+      - "80:80"
+    volumes:
+      - ../app:/app:rw,cached
+    environment:
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=${DB_NAME}
+
+  mariadb:
+    container_name: ${COMPOSE_PROJECT_NAME}_mariadb
+    image: ${COMPOSE_PROJECT_NAME}/mariadb
+    networks:
+      - backend
+    build: ./mariadb
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
+      - MYSQL_DATABASE=${DB_NAME}
+      - MYSQL_USER=${DB_USER}
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - seo_contents_mariadb:/var/lib/mysql:rw,cached
+
+  mysql-cron-backup:
+    image: fradelg/mysql-cron-backup
+    depends_on:
+      - mariadb
+    networks:
+      - backend
+    volumes:
+      - ../backup:/backup
+    environment:
+      - MYSQL_HOST=${COMPOSE_PROJECT_NAME}_mariadb
+      - MYSQL_USER=${DB_USER}
+      - MYSQL_PASS=${DB_PASSWORD}
+      - MYSQL_DB=${DB_NAME}
+      - MAX_BACKUPS=15
+      - INIT_BACKUP=0
+      # Every day at 03:00
+      - CRON_TIME=0 3 * * *
+    restart: unless-stopped
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: ${COMPOSE_PROJECT_NAME}_phpmyadmin
+    links:
+      - mariadb:db
+    ports:
+      - 8000:80
+    networks:
+      - backend
+    environment:
+      - MYSQL_USER=${DB_USER}
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+      - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
+
+networks:
+  frontend:
+  backend:
+
+volumes:
+  seo_contents_mariadb:
+    external: true
