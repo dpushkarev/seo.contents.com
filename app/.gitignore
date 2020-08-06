@@ -3,7 +3,6 @@ application/cache/*
 application/vendor/*
 application/config/development
 application/install.txt
-application/config/frontend_config.php
 application/config/my_config.php
 application/config/database.php
 !application/logs/index.html
