@@ -7,3 +7,4 @@ application/config/my_config.php
 application/config/database.php
 !application/logs/index.html
 !application/cache/.htaccess
+download
