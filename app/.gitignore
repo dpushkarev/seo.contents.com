@@ -8,3 +8,4 @@ application/config/database.php
 !application/logs/index.html
 !application/cache/.htaccess
 download
+my_cookies.txt
