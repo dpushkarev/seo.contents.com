@@ -75,7 +75,7 @@ class cWhois {
 		}
 
 		$response = $this->getSocketResult($domain, $this->whoisServer);
-		
+
 		$lastWhoisServer = $this->parseWhoisServer($this->parseWhois(strtolower($response)));
 		if($this->whoisServer != $lastWhoisServer and $lastWhoisServer != ''){
 			$this->whoisServer = $lastWhoisServer;
@@ -121,7 +121,7 @@ class cWhois {
 		}
 		$response = preg_replace("/%.*\n/", "", $response);
 		fclose($con);
-		
+
 		return $response;
 	}
 
@@ -205,7 +205,9 @@ class cWhois {
 			'name' => 'whois.nic.name',
 			'eu'   => 'whois.nic.biz',
 			'lt'   => 'whois.domreg.lt',
-			'eu'   => 'whois.eu'
+			'eu'   => 'whois.eu',
+			'it'   => 'whois.nic.it',
+			'ru'   => 'whois.ripn.net',
 		);
 
 		if(isset($whoisServers[$tld])){
