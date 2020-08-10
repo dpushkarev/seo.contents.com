@@ -3,7 +3,6 @@ application/cache/*
 application/vendor/*
 application/config/development
 application/install.txt
-application/config/my_config.php
 !application/logs/index.html
 !application/cache/.htaccess
 download
