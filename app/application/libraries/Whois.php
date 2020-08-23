@@ -1,4 +1,9 @@
 <?php
+
+require_once ("WhoIsParsers/SecondParser.php");
+require_once ("WhoIsParsers/CommonParser.php");
+require_once ("WhoIsParsers/InterfaceParser.php");
+
 class cWhois {
 	var $domainname;
 	var $whoisContent;
@@ -94,7 +99,9 @@ class cWhois {
 			$this->whoisContent = $response;
 		}
 
-		return $response;
+        $parser = $this->getParser($this->getTld($domain));
+
+		return $parser->parse($response);
 	}
 
 	function getSocketResult($domain, $server){
@@ -217,7 +224,15 @@ class cWhois {
 			return 'whois.iana.org';
 		}
 	}
-	
+
+    function getParser($domain): InterfaceParser
+    {
+        return [
+                'it' => new SecondParser(),
+                'ru' => new SecondParser(),
+            ][$domain] ?? new CommonParser();
+    }
+
 	function getRegistrar(){
 		if(!empty($this->whoisContent)){
 			preg_match_all('/Registrar:\s(.*?)\n/sx', $this->whoisContent, $result, PREG_PATTERN_ORDER);
