@@ -317,11 +317,11 @@
 			           		<div class="form-group">
 			           			<label for=""><i class="fas fa-file"></i> <?php echo $this->lang->line("File Upload Limit (MB)");?></label>
 		             			<?php 
-			             			$xeroseo_file_upload_limit=$this->config->item('xeroseo_file_upload_limit');
-			             			if($xeroseo_file_upload_limit=="") $xeroseo_file_upload_limit=4; 
+			             			$contents_file_upload_limit=$this->config->item('contents_file_upload_limit');
+			             			if($contents_file_upload_limit=="") $contents_file_upload_limit=4;
 		             			?>
-		               			<input name="xeroseo_file_upload_limit" value="<?php echo $xeroseo_file_upload_limit;?>"  class="form-control" type="number" min="1">
-		               			<span class="red"><?php echo form_error('xeroseo_file_upload_limit'); ?></span>	
+		               			<input name="contents_file_upload_limit" value="<?php echo $contents_file_upload_limit;?>"  class="form-control" type="number" min="1">
+		               			<span class="red"><?php echo form_error('contents_file_upload_limit'); ?></span>
 			           		</div>
 						</div>
 						<?php echo $save_button; ?>

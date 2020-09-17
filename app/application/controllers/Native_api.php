@@ -434,8 +434,6 @@ class Native_api extends Home
 
     }
 
-    /* http://konok-pc/xeroneit/web_analytics/native_api/dmoz_check?api_key=1h4Kxo791458648346BqAKuWC&domain=http://www.xeroneit.net */
-    /*status,details,listed_or_not*/
     public function dmoz_check()
     { 
         $return=array("status"=>"unknown","details"=>"unknown","listed_or_not"=>"unknown");
@@ -550,9 +548,6 @@ class Native_api extends Home
 
 
 // Section for Facebook ****************+++++++++++++++++++**********************************
-
- /* http://konok-pc/xeroneit/web_analytics/native_api/facebook_ckeck?api_key=1-tzScXkU1458725792PTfaDyY&domain=http://www.xeroneit.net */
-    /*status,details,total_share,total_like,total_comment*/ 
 
     public function facebook_ckeck()
     {
@@ -688,9 +683,6 @@ class Native_api extends Home
 
     // Section for Google+ ****************+++++++++++++++++++**********************************
 
- /* http://konok-pc/xeroneit/web_analytics/native_api/google_plus_ckeck?api_key=1-tzScXkU1458725792PTfaDyY&domain=http://www.xeroneit.net */
-    /*status,details,google_plus_count*/ 
-
     public function google_plus_ckeck()
     {
         $return=array();
@@ -805,9 +797,6 @@ class Native_api extends Home
 
      // Section for Linkedin ****************+++++++++++++++++++**********************************
 
- /* http://konok-pc/xeroneit/web_analytics/native_api/linkedin_check?api_key=1-tzScXkU1458725792PTfaDyY&domain=http://www.xeroneit.net */
-    /*status,details,total_share*/ 
-
     public function linkedin_check()
     {
         $return=array();
@@ -920,9 +909,6 @@ class Native_api extends Home
 
 
         // Section for Xing ****************+++++++++++++++++++**********************************
-
- /* http://konok-pc/xeroneit/web_analytics/native_api/xing_check?api_key=1-KNUF3JL14587280016cbKPGS&domain=http://www.xeroneit.net */
-    /*status,details,total_share*/ 
 
     public function xing_check()
     {
@@ -1040,9 +1026,6 @@ class Native_api extends Home
 
 
  // Section for Reddit ****************+++++++++++++++++++**********************************
-
- /* http://konok-pc/xeroneit/web_analytics/native_api/reddit_check?api_key=1-KNUF3JL14587280016cbKPGS&domain=http://www.xeroneit.net */
-    /*status,details,score,downs,ups*/ 
 
     public function reddit_check()
     {
@@ -1173,9 +1156,6 @@ class Native_api extends Home
 
  // Section for Pinterest ****************+++++++++++++++++++**********************************
 
- /* http://konok-pc/xeroneit/web_analytics/native_api/pinterest_check?api_key=1-KNUF3JL14587280016cbKPGS&domain=http://www.xeroneit.net */
-    /*status,details,pinterest_pin*/ 
-
     public function pinterest_check()
     {
         $return=array();
@@ -1292,9 +1272,6 @@ class Native_api extends Home
 
   
  // Section for Buffer ****************+++++++++++++++++++**********************************
-
- /* http://konok-pc/xeroneit/web_analytics/native_api/buffer_check?api_key=1-KNUF3JL14587280016cbKPGS&domain=http://www.xeroneit.net */
-    /*status,details,buffer_share*/ 
 
     public function buffer_check()
     {
@@ -1413,9 +1390,6 @@ class Native_api extends Home
 
 
      // Section for Stumbleupon ****************+++++++++++++++++++**********************************
-
- /* http://konok-pc/xeroneit/web_analytics/native_api/stumbleupon_check?api_key=1-KNUF3JL14587280016cbKPGS&domain=http://www.xeroneit.net */
-    /*status,details,total_view,total_like,total_comment,total_list*/ 
 
     public function stumbleupon_check()
     {
@@ -1556,8 +1530,6 @@ class Native_api extends Home
 
 // Section for Pagestatus  ****************+++++++++++++++++++**********************************
 
- /* http://konok-pc/xeroneit/web_analytics/native_api/pagestatus_check?api_key=1-KNUF3JL14587280016cbKPGS&domain=http://www.xeroneit.net */
-    /*status,details,http_code,total_time,namelookup_time,connect_time,speed_download*/ 
 
     public function pagestatus_check()
     {
@@ -1928,9 +1900,6 @@ class Native_api extends Home
 
     // Section for Bing Index ****************+++++++++++++++++++**********************************
 
- /* http://konok-pc/xeroneit/web_analytics/native_api/bing_index_check?api_key=1-KNUF3JL14587280016cbKPGS&domain=http://www.xeroneit.net */
-    /*bing_index*/ 
-
     public function bing_index_check()
     {
         $return=array();
@@ -2045,9 +2014,6 @@ class Native_api extends Home
 
 // Section for Yahoo Index ****************+++++++++++++++++++**********************************
 
- /* http://konok-pc/xeroneit/web_analytics/native_api/yahoo_index_check?api_key=1-KNUF3JL14587280016cbKPGS&domain=http://www.xeroneit.net */
-    /*yahoo_index*/ 
-
     public function yahoo_index_check()
     {
         $return=array();
@@ -2157,9 +2123,6 @@ class Native_api extends Home
 
 
 // Section for Link Analysis ****************+++++++++++++++++++**********************************
-
- /* http://konok-pc/xeroneit/web_analytics/native_api/link_analysis_check?api_key=1-KNUF3JL14587280016cbKPGS&domain=https://www.youtube.com/watch?v=vIHLaQo7wCk */
-    /*link_analysis_data*/ 
 
     public function link_analysis_check()
     {
@@ -2272,9 +2235,6 @@ class Native_api extends Home
 
  // Section for Backlink Analysis ****************+++++++++++++++++++**********************************
 
- /* http://konok-pc/xeroneit/web_analytics/native_api/backlink_check?api_key=1-KNUF3JL14587280016cbKPGS&domain=https://www.facebook.com */
-    /*link_analysis_data*/ 
-
     public function backlink_check()
     {
         $return=array();
@@ -2385,9 +2345,6 @@ class Native_api extends Home
 
 
   // Section for Malware Google Check ****************+++++++++++++++++++**********************************
-
- /* http://konok-pc/xeroneit/web_analytics/native_api/google_malware_check?api_key=1-KNUF3JL14587280016cbKPGS&domain=https://www.facebook.com */
-    /*google_status*/ 
 
     public function google_malware_check()
     {
@@ -2503,8 +2460,6 @@ class Native_api extends Home
 
 // Section for Malware Google Check ****************+++++++++++++++++++**********************************
 
- /* http://konok-pc/xeroneit/web_analytics/native_api/macafee_malware_check?api_key=1-KNUF3JL14587280016cbKPGS&domain=https://www.facebook.com */
-    /*macafee_status*/ 
 
     public function macafee_malware_check()
     {
@@ -2611,9 +2566,6 @@ class Native_api extends Home
         echo $macafee_status;
 
     }             
-
- /* http://konok-pc/xeroneit/web_analytics/native_api/avg_malware_check?api_key=1-KNUF3JL14587280016cbKPGS&domain=https://www.facebook.com */
-    /*avg_status*/ 
 
     public function avg_malware_check()
     {
@@ -2723,9 +2675,6 @@ class Native_api extends Home
     }             
 
 
-/* http://konok-pc/xeroneit/web_analytics/native_api/norton_malware_check?api_key=1-KNUF3JL14587280016cbKPGS&domain=https://www.facebook.com */
-    /*norton_status*/ 
-
     public function norton_malware_check()
     {
         $return=array();
@@ -2833,9 +2782,6 @@ class Native_api extends Home
 
     }             
 
-
-/* http://konok-pc/xeroneit/web_analytics/native_api/domain_ip_check?api_key=1-KNUF3JL14587280016cbKPGS&domain=https://www.webasroy.com */
-/*domain_ip_data*/ 
 
     public function domain_ip_check()
     {
@@ -2945,10 +2891,6 @@ class Native_api extends Home
 
     }             
 
-
-
-/* http://konok-pc/xeroneit/web_analytics/native_api/sites_in_same_ip_check?api_key=1-KNUF3JL14587280016cbKPGS&ip=104.244.42.1 */
-/*same_site_data*/ 
 
     public function sites_in_same_ip_check()
     {

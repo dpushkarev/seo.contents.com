@@ -7,7 +7,6 @@
  * @subpackage   Helpers
  * @category     Helpers
  * @author       Al-amin Jwel
- * @link         http://xeroneit.net
  */
 
 /* used to load assets that stored inside your addon

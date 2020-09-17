@@ -68,7 +68,7 @@ class Admin extends Home
             $this->form_validation->set_rules('force_https',  '<b>'.$this->lang->line("Force HTTPS").'</b>','trim');
             $this->form_validation->set_rules('enable_support',  '<b>'.$this->lang->line("Enable Suppordesk").'</b>','trim');
             $this->form_validation->set_rules('enable_signup_form',  '<b>'.$this->lang->line("Enable Signup Form").'</b>','trim');
-            $this->form_validation->set_rules('xeroseo_file_upload_limit',  '<b>'.$this->lang->line("File Upload Limit").'</b>','trim');
+            $this->form_validation->set_rules('contents_file_upload_limit',  '<b>'.$this->lang->line("File Upload Limit").'</b>','trim');
             $this->form_validation->set_rules('delete_junk_data_after_how_many_days','<b>'.$this->lang->line("Delete Junk Data").'</b>','trim');
 
             $this->form_validation->set_rules('mailchimp_list_id','<b>'.$this->lang->line("MailChimp List").'</b>','trim');
@@ -99,7 +99,7 @@ class Admin extends Home
                 $force_https=addslashes(strip_tags($this->input->post('force_https', true)));
                 $enable_support=addslashes(strip_tags($this->input->post('enable_support', true)));
                 $enable_signup_form=addslashes(strip_tags($this->input->post('enable_signup_form', true)));
-                $xeroseo_file_upload_limit=addslashes(strip_tags($this->input->post('xeroseo_file_upload_limit', true)));
+                $file_upload_limit=addslashes(strip_tags($this->input->post('contents_file_upload_limit', true)));
                 $delete_junk_data_after_how_many_days=addslashes(strip_tags($this->input->post('delete_junk_data_after_how_many_days', true)));
 
                 $use_admin_app=addslashes(strip_tags($this->input->post('use_admin_app', true)));
@@ -179,7 +179,7 @@ class Admin extends Home
                 $app_my_config_data.= "\$config['force_https'] = '".$force_https."';\n";
                 $app_my_config_data.= "\$config['enable_signup_form'] = '".$enable_signup_form."';\n";
                 $app_my_config_data.= "\$config['enable_support'] = '".$enable_support."';\n";
-                $app_my_config_data.= "\$config['xeroseo_file_upload_limit'] = '".$xeroseo_file_upload_limit."';\n\n";
+                $app_my_config_data.= "\$config['contents_file_upload_limit'] = '".$file_upload_limit."';\n\n";
 
                 if($master_password=='******')
                 $app_my_config_data.= "\$config['master_password'] = '".$this->config->item("master_password")."';\n\n";

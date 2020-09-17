@@ -1,7 +1,7 @@
 <?php 
   $this->load->view("include/upload_js");
-  if($this->config->item("xeroseo_file_upload_limit") != "") {
-    $file_upload_limit = $this->config->item("xeroseo_file_upload_limit");
+  if($this->config->item("contents_file_upload_limit") != "") {
+    $file_upload_limit = $this->config->item("contents_file_upload_limit");
   }
   else{
     $file_upload_limit = 4;
