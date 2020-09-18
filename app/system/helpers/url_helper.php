@@ -294,33 +294,6 @@ function curlCall($url,$proxy="")
 
 }
 
-function fb_app_set($value='')
-{
-	$ci = &get_instance();
-    $ci->load->library('session'); 
-    if($ci->session->userdata("user_type")!="Admin") return true;
-
-	if(file_exists(APPPATH.'config/licence.txt') && file_exists(APPPATH.'core/licence.txt'))
-	{
-        $config_existing_content = file_get_contents(APPPATH.'config/licence.txt');
-        $config_decoded_content = json_decode($config_existing_content, true);
-        $purchase_code  = $config_decoded_content['purchase_code'];
-        $base_url = base_url();
-        $only_domain  = get_domain_only($base_url);
-
-        $url = "http://xeroneit.net/development/envato_license_activation/purchase_code_check.php?purchase_code={$purchase_code}&domain={$only_domain}&item_name=FBInboxer";
-
-        $credentials = curlCall($url);
-        $decoded_credentials = json_decode($credentials,true);
-       
-        $content = json_decode($decoded_credentials['content'],true);
-        if($content['status'] == 'success' || isset($decoded_credentials['error'])) return true;               
-    }
-    else redirect("home/credential_check", 'Location');
-
-	$ci->session->set_flashdata('login_msg', $ci->lang->line("invalid email or password"));
-    redirect(uri_string());
-}
 
 // ------------------------------------------------------------------------
 

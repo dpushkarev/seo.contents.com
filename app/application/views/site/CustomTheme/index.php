@@ -784,28 +784,13 @@
     <div class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <div class="footer-col">
                         <h4>About <?php echo $this->config->item("product_short_name"); ?></h4>
                         <p>We're passionate about offering some of the best business growth services for startups</p>
                     </div>
                 </div> <!-- end of col -->
-                <div class="col-md-4">
-                    <div class="footer-col middle">
-                        <h4>Important Links</h4>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Our business partners <a class="turquoise" href="https://xeroneit.net">xeroneit.net</a></div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Read our <a class="turquoise" href="<?php echo base_url('home/terms_use'); ?>">Terms & Conditions</a>, <a class="turquoise" href="<?php echo base_url('home/privacy_policy'); ?>">Privacy Policy</a></div>
-                            </li>
-                        </ul>
-                    </div>
-                </div> <!-- end of col -->
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <div class="footer-col last">
                         <h4>Social Media</h4>
                         <?php if($this->config->item('facebook') != ''): ?>
