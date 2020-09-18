@@ -1,14 +1,3 @@
-<?php
-/*
-Theme Name: Default 
-Unique Name: default
-Theme URI: https://xeroseo.com/
-Author: Xerone IT
-Author URI: https://xeroneit.net
-Version: 6.0
-Description: This is a default theme provided by the Author of XeroSEO. We highly recommend not to change core files for your customization needs. For your own customization, create your own theme as per our <a href="https://xeroneit.net/blog/xerochat-front-end-theme-development-manual" target="_BLANK">documentation</a>. 
-*/
-?>
 <!DOCTYPE html>
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!-->

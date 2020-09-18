@@ -151,7 +151,7 @@ class Visitor_analysis extends Home
         $this->db->trans_start(); 
 
         $random_num = $this->_random_number_generator().time()."-".$this->user_id;
-        $js_code = '<script id="xero-domain-name" xero-data-name="'.$random_num.'" type="text/javascript" src="'.site_url().'js_controller/client"></script>';
+        $js_code = '<script id="contents-domain-name" contents-data-name="'.$random_num.'" type="text/javascript" src="'.site_url().'js_controller/client"></script>';
         $js_code=htmlspecialchars($js_code);
 
         $data = array(

@@ -174,9 +174,7 @@ class Js_controller extends Home
 		header('Content-Type: application/javascript');
 		$content = "/*
 			Title: SiteSpy Client v2.0
-			Author: XerOne IT
-			Copyright: XerOne IT
-			URL: https://xeroneit.net
+			URL: https://contents.com
 			*/
 
 			var ip_link='".base_url('js_controller/get_ip')."';
@@ -299,8 +297,8 @@ class Js_controller extends Home
 							var browser_version=browser_info.version;
 							
 							var browser_rawdata = JSON.stringify(navigator.userAgent);
-							// var website_code = document.getElementById('xero-domain-name').getAttribute('xero-data-name');
-							var website_code = document.querySelector('script#xero-domain-name').getAttribute('xero-data-name');
+							// var website_code = document.getElementById('contents-domain-name').getAttribute('contents-data-name');
+							var website_code = document.querySelector('script#contents-domain-name').getAttribute('contents-data-name');
 							
 							/**Get referer Address**/
 							var referrer = document.referrer;
@@ -310,7 +308,7 @@ class Js_controller extends Home
 							
 							/*** Get cookie value , if it is already set or not **/
 							
-							var cookie_value=readCookie('xerone_dolphin');
+							var cookie_value=readCookie('contents_dolphin');
 							var extra_value= new Date().getTime();
 							
 							/**if new visitor set the cookie value a random number***/
@@ -318,22 +316,22 @@ class Js_controller extends Home
 								var is_new=1;
 								var random_cookie_value=Math.floor(Math.random()*999999);
 								random_cookie_value=random_cookie_value+extra_value.toString();
-								createCookie('xerone_dolphin',random_cookie_value,1);
+								createCookie('contents_dolphin',random_cookie_value,1);
 								cookie_value=random_cookie_value;
 							}
 							
 							else{
-								createCookie('xerone_dolphin',cookie_value,1);
+								createCookie('contents_dolphin',cookie_value,1);
 								var is_new=0;
 							}
 							
 							
-							var session_value=sessionStorage.xerone_dolphin_session;
+							var session_value=sessionStorage.contents_dolphin_session;
 							
 							if(session_value=='' || session_value==null || session_value === undefined){
 								var random_session_value=Math.floor(Math.random()*999999);
 								random_session_value=random_session_value+extra_value.toString();
-								sessionStorage.xerone_dolphin_session=random_session_value;
+								sessionStorage.contents_dolphin_session=random_session_value;
 								session_value=random_session_value;
 							}
 							

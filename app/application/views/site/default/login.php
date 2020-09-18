@@ -35,7 +35,7 @@
 
           $default_user = $default_pass ="";
           if($this->is_demo=='1'){
-            $default_user = "admin@xeroseo.com";
+            $default_user = "admin@contents.com";
             $default_pass="123456";
           }
         ?>

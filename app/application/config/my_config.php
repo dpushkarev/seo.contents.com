@@ -1,7 +1,7 @@
 <?php $config = array (
   'default_page_url' => 'page/blank',
-  'product_name' => 'XeroSEO',
-  'product_short_name' => 'XeroSEO',
+  'product_name' => 'Contents.com',
+  'product_short_name' => 'Contents.com',
   'product_version' => '6.1.5',
   'slogan' => '#1 The Most Complete Visitor Analytics & SEO Tools',
   'institute_address1' => 'EntireDigital',

@@ -899,7 +899,7 @@
     /*
         $get_info variable return an array like :
         
-        Array ( [url] => http://xeroneitdddd.net 
+        Array ( [url] => http://contents.com
         [content_type] => 
         [http_code] => 0 
         [header_size] => 0 

@@ -87,7 +87,7 @@
                     <?php echo $this->lang->line('API HTTP URL:'); ?>
                     <pre class="language-javascript"><code class="dlanguage-javascript"><span class="token keyword"><?php echo site_url();?>native_api/facebook_ckeck?api_key=<?php echo $api_key; ?>&domain=ANY_WEBSITE_DOMAIN</span></code></pre>
                     <br>
-                    <?php $example_url=site_url()."native_api/facebook_ckeck?api_key=".$api_key."&domain=http://www.xeroneit.net";?>
+                    <?php $example_url=site_url()."native_api/facebook_ckeck?api_key=".$api_key."&domain=http://contents.com";?>
                     <?php echo $this->lang->line('Example API HTTP URL:'); ?> <br>
                     <a target="_BLANK" href="<?php echo $example_url;?>"><?php echo $example_url;?></a> <br>
                     <?php echo $this->lang->line('Example Response (JSON):'); ?> <br>
@@ -103,7 +103,7 @@
                     <?php echo $this->lang->line('API HTTP URL:'); ?>
                     <pre class="language-javascript"><code class="dlanguage-javascript"><span class="token keyword"><?php echo site_url();?>native_api/linkedin_check?api_key=<?php echo $api_key; ?>&domain=ANY_WEBSITE_DOMAIN</span></code></pre>
                     <br>
-                   <?php $example_url=site_url()."native_api/linkedin_check?api_key=".$api_key."&domain=http://www.xeroneit.net";?>
+                   <?php $example_url=site_url()."native_api/linkedin_check?api_key=".$api_key."&domain=http://contents.com";?>
                     <?php echo $this->lang->line('Example API HTTP URL:'); ?> <br>
                     <a target="_BLANK" href="<?php echo $example_url;?>"><?php echo $example_url;?></a> <br>
                     <?php echo $this->lang->line('Example Response (JSON):'); ?> <br>
@@ -135,7 +135,7 @@
                     <?php echo $this->lang->line('API HTTP URL:'); ?>
                     <pre class="language-javascript"><code class="dlanguage-javascript"><span class="token keyword"><?php echo site_url();?>native_api/reddit_check?api_key=<?php echo $api_key; ?>&domain=ANY_WEBSITE_DOMAIN</span></code></pre>
                     <br>
-                   <?php $example_url=site_url()."native_api/reddit_check?api_key=".$api_key."&domain=http://www.xeroneit.net";?>
+                   <?php $example_url=site_url()."native_api/reddit_check?api_key=".$api_key."&domain=http://contents.com";?>
                     <?php echo $this->lang->line('Example API HTTP URL:'); ?> <br>
                     <a target="_BLANK" href="<?php echo $example_url;?>"><?php echo $example_url;?></a> <br>
                     <?php echo $this->lang->line('Example Response (JSON):'); ?> <br>
@@ -183,7 +183,7 @@
                     <?php echo $this->lang->line('API HTTP URL:'); ?>
                     <pre class="language-javascript"><code class="dlanguage-javascript"><span class="token keyword"><?php echo site_url();?>native_api/pagestatus_check?api_key=<?php echo $api_key; ?>&domain=ANY_WEBSITE_DOMAIN</span></code></pre>
                     <br>
-                   <?php $example_url=site_url()."native_api/pagestatus_check?api_key=".$api_key."&domain=http://www.xeroneit.net";?>
+                   <?php $example_url=site_url()."native_api/pagestatus_check?api_key=".$api_key."&domain=http://contents.com";?>
                     <?php echo $this->lang->line('Example API HTTP URL:'); ?> <br>
                     <a target="_BLANK" href="<?php echo $example_url;?>"><?php echo $example_url;?></a> <br>
                     <?php echo $this->lang->line('Example Response (JSON):'); ?> <br>
@@ -199,7 +199,7 @@
                     <?php echo $this->lang->line('API HTTP URL:'); ?>
                     <pre class="language-javascript"><code class="dlanguage-javascript"><span class="token keyword"><?php echo site_url();?>native_api/alexa_check?api_key=<?php echo $api_key; ?>&domain=ANY_WEBSITE_DOMAIN</span></code></pre>
                     <br>
-                   <?php $example_url=site_url()."native_api/alexa_check?api_key=".$api_key."&domain=http://www.xeroneit.net";?>
+                   <?php $example_url=site_url()."native_api/alexa_check?api_key=".$api_key."&domain=http://contents.com";?>
                     <?php echo $this->lang->line('Example API HTTP URL:'); ?> <br>
                     <a target="_BLANK" href="<?php echo $example_url;?>"><?php echo $example_url;?></a> <br>
                     <?php echo $this->lang->line('Example Response (JSON):'); ?> <br>
@@ -229,7 +229,7 @@
                     <?php echo $this->lang->line('API HTTP URL:'); ?>
                     <pre class="language-javascript"><code class="dlanguage-javascript"><span class="token keyword"><?php echo site_url();?>native_api/bing_index_check?api_key=<?php echo $api_key; ?>&domain=ANY_WEBSITE_DOMAIN</span></code></pre>
                     <br>
-                   <?php $example_url=site_url()."native_api/bing_index_check?api_key=".$api_key."&domain=http://www.xeroneit.net";?>
+                   <?php $example_url=site_url()."native_api/bing_index_check?api_key=".$api_key."&domain=http://contents.com";?>
                     <?php echo $this->lang->line('Example API HTTP URL:'); ?> <br>
                     <a target="_BLANK" href="<?php echo $example_url;?>"><?php echo $example_url;?></a> <br>
                     <?php echo $this->lang->line('Example Response:'); ?> <br>
@@ -245,7 +245,7 @@
                     <?php echo $this->lang->line('API HTTP URL:'); ?>
                     <pre class="language-javascript"><code class="dlanguage-javascript"><span class="token keyword"><?php echo site_url();?>native_api/yahoo_index_check?api_key=<?php echo $api_key; ?>&domain=ANY_WEBSITE_DOMAIN</span></code></pre>
                     <br>
-                   <?php $example_url=site_url()."native_api/yahoo_index_check?api_key=".$api_key."&domain=http://www.xeroneit.net";?>
+                   <?php $example_url=site_url()."native_api/yahoo_index_check?api_key=".$api_key."&domain=http://contents.com";?>
                     <?php echo $this->lang->line('Example API HTTP URL:'); ?> <br>
                     <a target="_BLANK" href="<?php echo $example_url;?>"><?php echo $example_url;?></a> <br>
                     <?php echo $this->lang->line('Example Response:'); ?> <br>
@@ -261,7 +261,7 @@
                     <?php echo $this->lang->line('API HTTP URL:'); ?>
                     <pre class="language-javascript"><code class="dlanguage-javascript"><span class="token keyword"><?php echo site_url();?>native_api/link_analysis_check?api_key=<?php echo $api_key; ?>&domain=ANY_WEBSITE_DOMAIN</span></code></pre>
                     <br>
-                    <?php $example_url=site_url()."native_api/link_analysis_check?api_key=".$api_key."&domain=http://www.xeroneit.net";?>
+                    <?php $example_url=site_url()."native_api/link_analysis_check?api_key=".$api_key."&domain=http://contents.com";?>
                     <?php echo $this->lang->line('Example API HTTP URL:'); ?> <br>
                     <a target="_BLANK" href="<?php echo $example_url;?>"><?php echo $example_url;?></a> <br>
                   </div>
@@ -275,7 +275,7 @@
                     <?php echo $this->lang->line('API HTTP URL:'); ?>
                     <pre class="language-javascript"><code class="dlanguage-javascript"><span class="token keyword"><?php echo site_url();?>native_api/backlink_check?api_key=<?php echo $api_key; ?>&domain=ANY_WEBSITE_DOMAIN</span></code></pre>
                     <br>
-                   <?php $example_url=site_url()."native_api/backlink_check?api_key=".$api_key."&domain=http://www.xeroneit.net";?>
+                   <?php $example_url=site_url()."native_api/backlink_check?api_key=".$api_key."&domain=http://contents.com";?>
                     <?php echo $this->lang->line('Example API HTTP URL:'); ?> <br>
                     <a target="_BLANK" href="<?php echo $example_url;?>"><?php echo $example_url;?></a> <br>
                     <?php echo $this->lang->line('Example Response:'); ?> <br>
@@ -355,7 +355,7 @@
                    <?php echo $this->lang->line('API HTTP URL:'); ?>
                    <pre class="language-javascript"><code class="dlanguage-javascript"><span class="token keyword"> <?php echo site_url();?>native_api/domain_ip_check?api_key=<?php echo $api_key; ?>&domain=ANY_WEBSITE_DOMAIN</span></code></pre>
                    <br>
-                  <?php $example_url=site_url()."native_api/domain_ip_check?api_key=".$api_key."&domain=http://www.xeroneit.net";?>
+                  <?php $example_url=site_url()."native_api/domain_ip_check?api_key=".$api_key."&domain=http://contents.com";?>
                    <?php echo $this->lang->line('Example API HTTP URL:'); ?> <br>
                    <a target="_BLANK" href="<?php echo $example_url;?>"><?php echo $example_url;?></a> <br>
                    <?php echo $this->lang->line('Example Response (JSON):'); ?> <br>

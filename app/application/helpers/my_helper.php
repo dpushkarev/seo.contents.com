@@ -499,9 +499,6 @@ if ( ! function_exists('is_web_page'))
         }
 }
 
-
-//add query string to url  Example: add_query_string_to_url("https://xeroneit.net/support","from","value") , If query index is already availabe, it doesn't update the value. 
-
 if ( ! function_exists('add_query_string_to_url')){
 
     function add_query_string_to_url($url,$query_index,$query_value){

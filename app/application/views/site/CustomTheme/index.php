@@ -1,14 +1,3 @@
-<?php
-/*
-Theme Name: Demo Theme 
-Unique Name: Demo Theme
-Theme URI: https://xerochat.com
-Author: Xerone IT
-Author URI: http://xeroneit.net
-Version: 1.0
-Description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-*/
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -1,15 +1,4 @@
 <?php
-/*
-Addon Name: Simple support desk
-Unique Name: SimplesupportDesk
-Module ID: 0
-Project ID: 0
-Addon URI: http://getfbinboxer.com
-Author: Xerone IT
-Author URI: http://xeroneit.net
-Version: 1.0
-Description: Helpdesk service for extended users
-*/
 
 require_once("application/controllers/Home.php"); // loading home controller
 
