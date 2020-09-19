@@ -1,6 +1,6 @@
 <?php 
 $config['theme_front'] = 'purple';
-$config['display_landing_page'] = '1';
+$config['display_landing_page'] = '0';
 $config['facebook'] = 'https://www.facebook.com/';
 $config['twitter'] = 'https://twitter.com/';
 $config['linkedin'] = 'https://www.linkedin.com/';
